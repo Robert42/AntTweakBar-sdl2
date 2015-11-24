@@ -6150,9 +6150,9 @@ void CTwMgr::CreateCursors()
     m_CursorTopLeft = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_SIZENWSE);
     m_CursorBottomLeft = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_SIZENESW);
     m_CursorBottomRight = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_SIZENWSE);
-    m_CursorHelp = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_ARROW); // TODO
+    m_CursorHelp = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_ARROW); // todo
     m_CursorCross = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_CROSSHAIR);
-    m_CursorUpArrow = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_ARROW); // TODO
+    m_CursorUpArrow = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_ARROW); // todo
     m_CursorNo = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_NO);
     m_CursorIBeam = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_IBEAM);
     m_CursorHand = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_HAND );
