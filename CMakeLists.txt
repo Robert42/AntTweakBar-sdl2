@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.8)
+cmake_minimum_required(VERSION 3.1)
 
 project(AntTweakBar-sdl)
 
@@ -24,8 +24,9 @@ if(NOT MSVC)
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-strict-aliasing") # sigh
 endif()
 
-include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 add_definitions("-DATB_OPENGL_HEADER=<${ATB_OPENGL_HEADER}>" -DTW_STATIC)
 
 add_library(AntTweakBar STATIC ${anttweakbar_sources})
+
+target_include_directories(AntTweakBar SYSTEM PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
